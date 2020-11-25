@@ -1,0 +1,71 @@
+.header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  height: 104px
+  padding-left: 34px
+  border-bottom: 1px solid $line
+  position: relative
+  &__line
+    height: 100%
+    width: 1px
+    background-color: $line
+  &__logo
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 135px
+      height: 100%
+      width: 1px
+      background-color: $line
+
+  &__image
+    width: 68px
+  &__input
+    margin-left: 66px
+    background-image: url(../img/search-icon.svg)
+    background-repeat: no-repeat
+    background-position: center left
+    padding-left: 38px
+    border: none
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 21px
+    color: $light-text
+  &__navigation
+    margin-right: 30px
+    margin-left: auto
+  &__link
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 21px
+    color: $dark-text
+    text-decoration: none
+    margin-right: 18px
+    &:hover
+      color: $primary
+  &__buttons
+    height: 100%
+  &__button
+    height: 100%
+    border: none
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 21px
+    cursor: pointer
+    &--signup
+      color: $primary
+      background-color: #fff
+      padding-left: 34px
+      padding-right: 34px
+      border-left: 1px solid $line
+    &--login
+      background-color: $primary
+      color: #fff
+      padding-left: 50px
+      padding-right: 50px
